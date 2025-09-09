@@ -365,6 +365,24 @@ if ('speechSynthesis' in window) {
         });
     }
 
+    function speakPreview(text, voiceName) {
+        ensureAudioIsReady(() => {
+            if (synth.speaking) {
+                synth.cancel();
+            }
+            const voice = voices.find(v => v.name === voiceName);
+            if (voice) {
+                const utterThis = new SpeechSynthesisUtterance(text);
+                utterThis.voice = voice;
+                utterThis.rate = rateInput.value;
+                utterThis.pitch = pitchInput.value;
+                synth.speak(utterThis);
+            } else {
+                showModal("The selected preview voice is not available. Please choose another voice.");
+            }
+        });
+    }
+
     function initializeEventListeners() {
         modalClose.onclick = () => {
             modal.classList.add('hidden');
@@ -745,3 +763,4 @@ if ('speechSynthesis' in window) {
     startBtn.textContent = 'Not Supported';
     document.querySelector('#start-overlay p').textContent = 'Sorry, your browser does not support the Web Speech API required for this application.';
 }
+
