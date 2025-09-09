@@ -10,11 +10,11 @@ if ('speechSynthesis' in window) {
         PLAY: `<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6.3 4.99C5.57 4.54 4.5 5.09 4.5 5.95v8.11c0 .86 1.07 1.4 1.8.95l6.93-4.05a1.14 1.14 0 0 0 0-1.9L6.3 4.99z"></path></svg>`,
         PAUSE: `<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>`,
         STOP: `<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 5h10v10H5V5z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>`,
-        PREVIEW: `<svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`,
+        PREVIEW: `<svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11- ১৮ 0 9 9 0 0118 0z"></path></svg>`,
         RESET: `<svg class="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5 4.5V8.5H17.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.34 14.57A8 8 0 1 1 20.5 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="15.5" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="currentColor">1</text></svg>`
     };
     
-    const airportNames = { ICN: '인천' };
+    const airportNames = { ICN: '인천', PUS: '부산' };
     
     // Element Caching
     const header = document.getElementById('controls-header');
